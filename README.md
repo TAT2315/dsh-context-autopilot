@@ -4,6 +4,8 @@ DeepSeek Harness（DSH）插件：会话上下文超过阈值时自动压缩。
 
 An automatic compaction plugin for DeepSeek Harness — it compacts the conversation once its context passes a configurable token threshold, before a very long context degrades the model.
 
+本插件的问题定位、需求定义与发布决策由维护者完成，实现过程使用了 AI 辅助。
+
 ---
 
 ## 它解决的问题
