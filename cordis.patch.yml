@@ -1,0 +1,16 @@
+# context-autopilot 的默认配置。
+#
+# thresholdTokens —— 触发线（绝对值，不是比例）。
+#   实测退化（只思考不输出）从约 40 万 tokens 开始出现、55 万以上高发，
+#   所以默认压在 42 万，留出余量。
+#   更保守用 350000；想少压缩用 500000。
+#   模型上下文窗口不是 1M 的部署，请按比例下调。
+#
+# cooldownMs —— 两次尝试之间的最短间隔，防止压缩失败后每轮重试。
+
+- insert:
+    - id: context-autopilot
+      name: 'dsh-context-autopilot'
+      config:
+        thresholdTokens: 420000
+        cooldownMs: 30000

@@ -1,0 +1,36 @@
+{
+  "name": "dsh-context-autopilot",
+  "version": "1.0.0",
+  "description": "DSH 插件：会话上下文超过可配置阈值时自动压缩，防止超长上下文把模型拖成只思考不输出。",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "compaction",
+    "context-window"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./lib.js": "./lib.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "index.js",
+    "lib.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg",
+    "locale/en.json",
+    "locale/zh.json"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Context autopilot",
+    "description": "Compacts the conversation automatically once its context passes a token threshold, before a very long context degrades reasoning."
+  }
+}
